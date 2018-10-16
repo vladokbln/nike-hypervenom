@@ -1,0 +1,70 @@
+.technology {
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	&-bg {
+		width: 100%;
+		max-width: 1215px;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 25px;
+		background: url('../img/technology-bg.png') 65% 0 no-repeat;
+		background-size: contain;
+	}
+	&:before {
+		position: absolute;
+		display: block;
+		content: '';
+		top: -230px;
+		left: 0;
+		width: 100%;
+		height: 230px;
+		background: url('../img/technology-before.png') 50% 0 no-repeat;
+		z-index: -10;
+	}
+	&:after {
+		position: absolute;
+		display: block;
+		content: '';
+		bottom: -250px;
+		left: 0;
+		width: 100%;
+		height: 400px;
+		background: url('../img/technology-after.png') 80% 0 no-repeat;
+		z-index: -10;
+	}
+}
+.technology-button {
+	position: absolute;
+	bottom: 100px;
+	left: 40px;
+}
+.technology-text {
+	font-weight: 500;
+	color: @blueColor;
+	position: absolute;
+	&--one {
+		top: 20%;
+		left: -5%;
+	}
+	&--two {
+		top: -5%;
+		right: 15%;
+	}
+	&--three {
+		bottom: 65%;
+		right: -2%;
+	}
+}
+.technology-img {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	img {
+		width: 100%;
+	}
+}

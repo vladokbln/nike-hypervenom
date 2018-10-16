@@ -1,0 +1,46 @@
+.footer {
+	padding: 40px 0;
+	.logo {
+		margin-right: 50px;
+	}
+	background-color: #212e30;
+	&-flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&-left {
+		display: flex;
+		align-items: center;
+	}
+	&-link {
+		color: #437077;
+		line-height: 30px;
+		font-weight: 100;
+	}
+}
+.footer-list {
+	padding: 0 20px;
+	margin: 0 30px;
+}
+.footer-social {
+	display: flex;
+	&__item {
+		margin-left: 15px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__link {
+		display: block;
+		padding: 10px;
+		line-height: 0 important;
+		
+		svg {
+			width: 15px;
+			height: 15px;
+			fill: #437077;
+		}
+	}
+}
