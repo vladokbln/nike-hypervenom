@@ -7,6 +7,17 @@
 	padding: 65px 0;
 	background: url('../img/header-bg1.jpg') 50% 50% no-repeat;
 	overflow: hidden;
+	&-button {
+		&--right {
+			margin-left: 25px;
+			border: 2px solid #fff;
+			background: transparent;
+			box-shadow: 0 10px 30px rgba(20, 108, 113, 0.15), inset 0 0 2px rgba(255, 255, 255, 0.3);
+			&:hover {
+				border: 2px solid transparent;
+			}
+		}
+	}
 	&-top {
 		position: absolute;
 		top: 0;
@@ -166,15 +177,5 @@
 		font-weight: 700;
 		color: @blueColor;
 	}
-	&__button {
-		&--right {
-			margin-left: 25px;
-			border: 2px solid #fff;
-			background: transparent;
-			box-shadow: 0 10px 30px rgba(20, 108, 113, 0.15), inset 0 0 2px rgba(255, 255, 255, 0.3);
-			&:hover {
-				border: 2px solid transparent;
-			}
-		}
-	}
+
 }
